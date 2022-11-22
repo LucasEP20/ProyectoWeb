@@ -1,0 +1,46 @@
+//!VARIABLES
+//*Secciones reservadas de memoria para almacenar datos
+$color-principal: rgb(104,37,55);
+$color-secundario: rgb(77,37,55);
+$color-terciario: rgb(104,37,55);
+
+//!LISTAS
+$colores:
+red,
+green,
+blue,
+tomato
+pink,
+gray;
+
+$font-size:
+12px,
+16px,
+20px,
+25px;
+
+h1{
+    font-size: nth($font-size, 4 );
+    color:nth($colores, 4);
+}
+
+//!OPERACIONES
+$ancho:500px
+
+// img{
+//     width: $ancho / 2 -10;
+// }
+
+
+// //!MAPAS
+// $boton:(
+//     //KEY - VALOR
+//     bg-boton:black,
+//     borde: 2px solid tomate,
+//     color-texto:white
+// )
+
+// .boton{
+//     background-color: map-get($boton , $bg-boton);
+//     border:map-get($boton, borde)
+// }

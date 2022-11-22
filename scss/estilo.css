@@ -1,0 +1,6 @@
+@import url(./componets/_footer.scss);
+@import url(./componets/_header.scss);
+@import url(./componets/_main.scss);
+@import url(./base/_media-query.scss);
+@import url(./base/_generales.scss);
+@import url(./base/_variables.scss);

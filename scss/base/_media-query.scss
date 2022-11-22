@@ -1,36 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.grid-contenedor {
-    width: 100%;
-    height: 100%;
-    color: black;
-    background-color: #FECD70;
-    font-size: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 0px;
-    grid-template-areas: "header" "main" "footer";
-}
-
-.encabezado {
-    background-color: #FFAE6D;
-    grid-area: header;
-}
-
-.contenido {
-    background-color: #FECD70;
-    grid-area: main;
-}
-
-.pie {
-    background-color: black;
-    grid-area: footer;
-}
-
 /*VISTA MOBILE*/
 @media screen and (min-width: 425px) {
 
@@ -175,7 +142,6 @@ main .productos .contenedor-producto {
     justify-content: space-around;
     align-items: center;
 }
-
 main .contenedor-historia .historia {
     width: 100%;
     margin: 0 auto;
@@ -183,7 +149,8 @@ main .contenedor-historia .historia {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto auto;
-    grid-template-areas: "img descrip" "img descrip";
+    grid-template-areas: "img descrip"
+        "img descrip";
 }
 
 main .img {
@@ -232,6 +199,7 @@ main .productos .contenedor-producto {
     align-items: center;
 }
 
+
 main .prodcutos-pedido {
     border: black 2px;
     align-items: center;
@@ -249,6 +217,7 @@ main .productos-pedido .contenedor-producto-pedido .card {
     border: 2px solid black;
 }
 
+
 main .productos-pedido div a {
     display: inline-block;
     text-decoration: none;
@@ -263,20 +232,7 @@ footer {
 footer div {
     text-align: center;
     color: white;
-}
-
-h1 {
-    font-size: 25px;
-    color: tomato pink;
-}
-
-footer {
-    background-color: black;
-}
-
-footer div {
-    text-align: center;
-    color: white;
+    
 }
 
 h1 {
