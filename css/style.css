@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-contenedor {
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: #FECD70;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.encabezado {
+    background-color: #FFAE6D;
+    grid-area: header;
+}
+
+.contenido {
+    background-color: #FECD70;
+    grid-area: main;
+}
+
+.pie {
+    background-color: black;
+    grid-area: footer;
+}
+
+/*VISTA MOBILE*/
+@media screen and (min-width: 425px) {
+
+    /*HEADER*/
+    header {
+        background-color: black;
+        position: sticky;
+        top: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header div img {
+        width: 70px;
+        height: 70px;
+    }
+
+    header div nav {
+        height: 20px;
+        text-align: center;
+    }
+
+    header div nav ul {
+        list-style: none;
+        display: inline-block;
+        padding: 18px;
+    }
+
+    header div nav ul li {
+        float: left;
+        font-size: 20px;
+        margin-top: 20px;
+        border: 2px solid black;
+        background-color: #FECD70;
+    }
+
+    header div nav ul li:hover {
+        background: #ffae6d;
+        background: linear-gradient(90deg, #ffae6d 0%, #f6edc0 50%, #ffae6d 100%);
+    }
+
+    header div nav ul li a {
+        color: white;
+        font-weight: bold;
+        font-size: none;
+        padding: 18px;
+        text-decoration: none;
+    }
+}
+
+/*----------------------------------------------- VISTA DESKTOP*/
+@media screen and (min-width: 1024px) {
+
+    /*HEADER*/
+    .nombre {
+        display: flex;
+        grid-area: nombre;
+        align-items: center;
+        text-align: center;
+    }
+
+    header {
+        background-color: black;
+        position: sticky;
+        top: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header div img {
+        width: 150px;
+        height: 150px;
+    }
+
+    header div nav {
+        height: 70px;
+        text-align: center;
+    }
+
+    header div nav ul {
+        list-style: none;
+        display: inline-block;
+        padding: 18px;
+    }
+
+    header div nav ul li {
+        float: left;
+        font-size: 20px;
+        margin-top: 20px;
+        border: 2px solid black;
+    }
+
+    header div nav ul li a {
+        color: white;
+        font-weight: bold;
+        font-size: none;
+        padding: 18px;
+        text-decoration: none;
+    }
+
+    header div nav ul li:hover {
+        background: #ffae6d;
+        background: linear-gradient(90deg, #ffae6d 0%, #f6edc0 50%, #ffae6d 100%);
+    }
+
+    main .img {
+        width: 300px;
+        height: 300px;
+    }
+
+    main .hero {
+        background-image: url("../img/local.jpg");
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    main .hero div {
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+}
+
+main {
+    background-color: #FECD70;
+    /*Pagina Historia*/
+}
+
+main .productos {
+    border: black 2px;
+    align-items: center;
+}
+
+main .productos h2 {
+    text-align: center;
+}
+
+main .productos .contenedor-producto {
+    justify-content: space-around;
+    align-items: center;
+}
+main .contenedor-historia .historia {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: "img descrip"
+        "img descrip";
+}
+
+main .img {
+    grid-area: img;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+    padding: 5px;
+}
+
+main .descrip {
+    grid-area: descrip;
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/*DESKTOP*/
+main {
+    background-color: #FECD70;
+    /*Pagina hace tu pedido*/
+}
+
+main .hero {
+    background-image: url("../img/local.jpg");
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main .hero div {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+main .productos {
+    border: black 2px;
+    align-items: center;
+}
+
+main .productos .contenedor-producto {
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+main .prodcutos-pedido {
+    border: black 2px;
+    align-items: center;
+}
+
+main .productos-pedido h2 {
+    text-align: center;
+}
+
+main .productos-pedido .contenedor-producto-pedido .card {
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+}
+
+
+main .productos-pedido div a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+}
+
+footer {
+    background-color: black;
+}
+
+footer div {
+    text-align: center;
+    color: white;
+    
+}
+
+h1 {
+    font-size: 25px;
+    color: tomato pink;
+}
